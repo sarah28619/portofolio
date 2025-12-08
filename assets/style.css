@@ -36,7 +36,6 @@ a:hover {
     color: var(--primary-color);
 }
 
-/* 2. HEADER / NAVBAR */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -81,7 +80,6 @@ a:hover {
     font-size: 1.2em;
 }
 
-/* 3. HERO SECTION */
 .hero-section {
     min-height: calc(100vh - 64px); 
     display: flex;
@@ -109,7 +107,6 @@ a:hover {
     color: #cccccc;
 }
 
-/* 4. ABOUT ME SECTION */
 .about-section {
     background-color: var(--dark-bg);
     text-align: center;
@@ -226,7 +223,6 @@ a:hover {
     font-weight: bold;
 }
 
-/* 6. MY PROJECT SECTION */
 .project-section h2 {
     text-align: center;
     margin-bottom: 50px; 
@@ -301,7 +297,6 @@ a:hover {
     color: var(--primary-color);
 }
 
-/* 7. CONTACT SECTION (GAYA FIGMA) */
 .contact-section {
     padding: 100px 5%;
     background-color: var(--dark-bg);
@@ -384,7 +379,6 @@ a:hover {
     background-color: #6f6aa1;
 }
 
-/* MEDIA SOSIAL KONTAK */
 .contact-sosmed-figma {
     display: flex;
     justify-content: space-around;
@@ -413,27 +407,20 @@ a:hover {
 }
 
 
-
-
-
-
 /*--ubah ke tablet--*/
 @media (min-width: 768px) and (max-width: 1024px) {
     section {
         padding: 80px 4%; 
     }
     
-    /* === NAVIGASI === */
     .main-nav a {
         margin: 0 10px; 
     }
 
-    /* === ABOUT ME SECTION === */
     .about-image-container {
         max-width: 300px;
     }
     
-    /* === SKILLS & PROJECTS === */
     .skills-grid {
         max-width: 800px;
     }
@@ -442,12 +429,10 @@ a:hover {
         max-width: 95%; 
     }
     
-    /* === CONTACT SECTION === */
     .contact-box {
         max-width: 700px; 
     }
 }
-
 
 /*--ubah ke hp--*/
 @media (max-width: 767px) {
@@ -456,13 +441,11 @@ a:hover {
         padding: 50px 3%; 
     }
     
-    /* === NAVIGASI === */
     .navbar {
         flex-direction: column; 
         align-items: center; 
         padding: 15px 5%;
     }
-    
     
     .main-nav {
         order: 2; 
@@ -478,12 +461,10 @@ a:hover {
         padding: 3px 6px;
     }
     
-    /* === HERO SECTION === */
     .hero-content h1 {
         font-size: 2.2em; 
     }
 
-    /* === ABOUT ME SECTION === */
     .about-content {
         flex-direction: column; 
         text-align: center;
@@ -499,7 +480,6 @@ a:hover {
         padding-left: 0;
     }
     
-    /* === SKILLS & PROJECTS === */
     .skills-grid, .projects-grid {
         max-width: 100%; 
         padding: 0 10px;
@@ -507,7 +487,6 @@ a:hover {
         margin: 20px auto;
     }
     
-    /* === CONTACT SECTION === */
     .contact-box {
         max-width: 90%; 
         padding: 20px;
