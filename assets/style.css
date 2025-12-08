@@ -37,12 +37,13 @@ a:hover {
 }
 
 .navbar {
-    display: flex;
+   display: flexbox;
     justify-content: space-between;
     align-items: center;
     padding: 20px 5%;
     background-color: #010131; 
     border-bottom: 2px solid var(--secondary-bg);
+    position: sticky;
 }
 .logo {
     font-size: 1.5em;
@@ -56,28 +57,6 @@ a:hover {
 .main-nav a {
     margin: 0 15px;
     font-size: 1em;
-}
-
-#menu-toggle {
-    display: none;
-}
-
-.hamburger-icon {
-    display: none; 
-    font-size: 1.5em;
-    color: var(--primary-color); 
-    cursor: pointer;
-    z-index: 1001; 
-}
-
-.menu-container {
-    display: flex; 
-    align-items: center;
-    gap: 30px;
-}
-.social-nav a {
-    margin-left: 15px;
-    font-size: 1.2em;
 }
 
 .hero-section {
@@ -190,7 +169,6 @@ a:hover {
     margin: 30px auto
 }
 
-
 .skill-item {
     display: flex;
     flex-direction: column;
@@ -203,7 +181,6 @@ a:hover {
     box-shadow: 0 4px 15px rgba(114, 115, 158, 0.4);
     transition: transform 0.3s, background-color 0.3s;
     border: 1px solid transparent;
-    
 }
 
 .skill-item:hover {
