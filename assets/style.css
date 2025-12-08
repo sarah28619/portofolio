@@ -17,6 +17,7 @@ body {
     color: var(--text-light);
     font-family: initial, sans-serif;
     min-height: 100vh;
+    display: flexbox;
 }
 
 section {
