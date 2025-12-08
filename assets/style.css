@@ -9,6 +9,7 @@
     --primary-color: #ffffff; 
     --secondary-bg: #010139; 
     --text-light: #ffffff;
+    display: flexbox;
 }
 
 body {
@@ -37,7 +38,7 @@ a:hover {
 }
 
 .navbar {
-   display: flexbox;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 5%;
