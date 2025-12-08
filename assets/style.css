@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    display: flexbox;
 }
 
 :root {
@@ -9,7 +10,6 @@
     --primary-color: #ffffff; 
     --secondary-bg: #010139; 
     --text-light: #ffffff;
-    display: flexbox;
 }
 
 body {
@@ -45,7 +45,7 @@ a:hover {
     padding: 20px 5%;
     background-color: #010131; 
     border-bottom: 2px solid var(--secondary-bg);
-    position: sticky;
+    display: flexbox;
 }
 .logo {
     font-size: 1.5em;
