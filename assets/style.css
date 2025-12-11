@@ -291,7 +291,7 @@ a:hover {
 }
 
 .contact-box {
-    max-width:800px;
+    max-width:400px;
     margin: 0 auto;
 }
 
@@ -299,31 +299,36 @@ a:hover {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    padding: 50px 50px;
+    padding: 30px 30px;
     background-color: #010139; 
     border-radius: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     position: relative;
+    
 }
 
 .form-group-design {
-    display: flex;
+    
     align-items: center;
-    gap: 10px;
+    gap: 5px;
+    flex-direction: row-reverse;
 }
 
 .form-group-design label {
     font-weight: bold;
     color: var(--text-light);
+    flex-direction: row;
     flex-shrink: 0; 
-    min-width: 80px; 
+    min-width: 20px; 
     text-align: right;
+    
 }
 
 .contact-form-design input,
 .contact-form-design textarea {
-    width: 200%;
-    padding: 25px;
+    width: 100%;
+    
+    padding: 10px;
     background-color: #ffffff; 
     border: none;
     color: var(--dark-bg); 
@@ -333,7 +338,8 @@ a:hover {
 
 .contact-form-design textarea {
     resize: none; 
-    height: 130px;
+    height: 100px;
+    width: 100%;
 }
 
 .contact-form-design input:focus,
