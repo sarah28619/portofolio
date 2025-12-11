@@ -295,45 +295,50 @@ a:hover {
     margin: 0 auto;
 }
 
-.contact-form-design {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 30px 30px;
-    background-color: #010139; 
-    border-radius: 10px;
-    margin-bottom: 20px;
-    position: relative;
-    
-}
+/* style.css (Di sekitar baris 310 pada tangkapan layar Anda) */
 
 .form-group-design {
+    /* 1. MENGATUR SEJAJAR HORIZONTAL (LABEL DAN INPUT) */
+    display: flex; 
+    align-items: center; /* Menengahkan vertikal antara label dan input */
+    gap: 15px; /* Jarak antara label dan kotak input */
     
-    align-items: center;
-    gap: 5px;
-    flex-direction: row-reverse;
+    /* PENTING UNTUK MENENGKAHKAN FORM GROUP SECARA KESELURUHAN */
+    justify-content: center; 
 }
 
+/* GAYA UNTUK LABEL (Name:, Email:, Message:) */
 .form-group-design label {
     font-weight: bold;
-    color: var(--text-light);
-    flex-direction: row;
-    flex-shrink: 0; 
-    min-width: 20px; 
-    text-align: right;
+    color: var(--light-color);
+    flex-shrink: 0; /* Pastikan label tidak menyusut paksa */
     
+    /* 2. MENGATUR LEBAR MINIMUM UNTUK PENYEJAJARAN TEKS */
+    min-width: 100px; /* Atur lebar minimal agar semua label (Name, Email, Message) rata kiri */
+    text-align: right; /* Opsional: Membuat teks label (Name:) rata kanan di dalam min-width */
 }
 
+/* GAYA UNTUK KOTAK INPUT/TEXTAREA */
 .contact-form-design input,
 .contact-form-design textarea {
-    width: 100%;
-    
-    padding: 10px;
-    background-color: #ffffff; 
+    /* 3. MENGATUR LEBAR KOTAK AGAR PROPORSIONAL */
+    width: 100%; /* Agar kotak mengisi sisa ruang yang tersedia dalam .contact-form-design */
+    padding: 12px;
+    border-radius: 5px;
     border: none;
-    color: var(--dark-bg); 
-    border-radius: 9px;
-    font-size: 1.2em;
+    background-color: var(--light-color); /* Kotak berwarna putih */
+    color: var(--secondary-bg);
+}
+
+.contact-form-design textarea {
+    resize: vertical;
+}
+
+/* 4. MENGECILKAN KOTAK FORMULIR SECARA KESELURUHAN */
+/* Kita akan mengecilkan kotak form (biru gelap) itu sendiri, jika belum dilakukan */
+.contact-box {
+    max-width: 600px; /* Coba 600px, nilai sebelumnya mungkin 800px. Ubah sesuai kebutuhan Anda */
+    margin: 0 auto;
 }
 
 .contact-form-design textarea {
