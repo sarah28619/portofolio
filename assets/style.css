@@ -360,6 +360,18 @@ a:hover {
     background-color: #6f6aa1;
 }
 
+main-footer {
+    background-color: var(--dark-bg); 
+    color: var(--light-color); 
+    text-align: center;
+    padding: 25px 0;
+    font-size: 0.9em;
+    border-top: 1px solid rgba(255, 255, 255, 0.1); 
+}
+
+.main-footer p {
+    margin-bottom: 10px;
+}
 .contact-sosmed-figma {
     display: flex;
     justify-content: space-around;
@@ -368,20 +380,20 @@ a:hover {
     margin: 0 auto;
 }
 
-.sosmed-item-figma {
+.sosmed-item {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.sosmed-item-figma a {
+.sosmed-item a {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
 }
 
-.sosmed-item-figma i {
+.sosmed-item i {
     font-size: 3em;
     color: var(--primary-color); 
     
