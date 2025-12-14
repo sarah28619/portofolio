@@ -72,6 +72,13 @@ a:hover {
     font-weight: bold;
     color: var(--primary-color);
 }
+
+.social-nav {
+    display: flex; 
+    align-items: center;
+    gap: 17px;
+}
+
 .navbar .logo .highlight-logo {
         color: rgb(93, 108, 178);
 }
@@ -218,13 +225,14 @@ a:hover {
 }
 
 .skill-item span {
-    font-size: 1.em;
+    font-size: 1.5em;
     font-weight: bold;
 }
 
 .project-section h2 {
     text-align: center;
     margin-bottom: 50px; 
+    font-size: 2.5em;
 }
 
 .projects-grid {
@@ -387,7 +395,7 @@ a:hover {
     display: flex;
     justify-content: space-around;
     padding-top: 20px;
-    max-width: 450px;
+    max-width: 550px;
     margin: 0 auto;
 }
 
