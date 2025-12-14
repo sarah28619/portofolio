@@ -49,6 +49,24 @@ a:hover {
     z-index: 1000;
     box-shadow: #010131;
 }
+#menu-toggle {
+    display: none;
+}
+
+.hamburger-icon {
+    display: none; 
+    font-size: 1.5em;
+    color: var(--light-color); 
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.menu-container {
+    display: flex; 
+    align-items: center;
+    gap: 30px;
+}
+
 .logo {
     font-size: 1.5em;
     font-weight: bold;
@@ -291,54 +309,48 @@ a:hover {
 }
 
 .contact-box {
-    max-width:400px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
-/* style.css (Di sekitar baris 310 pada tangkapan layar Anda) */
+.contact-form-design {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px 30px;
+    background-color: #010139; 
+    border-radius: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    
+}
 
 .form-group-design {
-    /* 1. MENGATUR SEJAJAR HORIZONTAL (LABEL DAN INPUT) */
-    display: flex; 
-    align-items: center; /* Menengahkan vertikal antara label dan input */
-    gap: 15px; /* Jarak antara label dan kotak input */
-    
-    /* PENTING UNTUK MENENGKAHKAN FORM GROUP SECARA KESELURUHAN */
-    justify-content: center; 
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    gap: 10px;
+
 }
 
-/* GAYA UNTUK LABEL (Name:, Email:, Message:) */
 .form-group-design label {
     font-weight: bold;
-    color: var(--light-color);
-    flex-shrink: 0; /* Pastikan label tidak menyusut paksa */
+    color: var(--text-light);
+     flex-shrink: 0; 
+    min-width: 100px; 
+    text-align: left;
     
-    /* 2. MENGATUR LEBAR MINIMUM UNTUK PENYEJAJARAN TEKS */
-    min-width: 100px; /* Atur lebar minimal agar semua label (Name, Email, Message) rata kiri */
-    text-align: right; /* Opsional: Membuat teks label (Name:) rata kanan di dalam min-width */
 }
 
-/* GAYA UNTUK KOTAK INPUT/TEXTAREA */
 .contact-form-design input,
 .contact-form-design textarea {
-    /* 3. MENGATUR LEBAR KOTAK AGAR PROPORSIONAL */
-    width: 100%; /* Agar kotak mengisi sisa ruang yang tersedia dalam .contact-form-design */
-    padding: 12px;
-    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    background-color: #ffffff; 
     border: none;
-    background-color: var(--light-color); /* Kotak berwarna putih */
-    color: var(--secondary-bg);
-}
-
-.contact-form-design textarea {
-    resize: vertical;
-}
-
-/* 4. MENGECILKAN KOTAK FORMULIR SECARA KESELURUHAN */
-/* Kita akan mengecilkan kotak form (biru gelap) itu sendiri, jika belum dilakukan */
-.contact-box {
-    max-width: 600px; /* Coba 600px, nilai sebelumnya mungkin 800px. Ubah sesuai kebutuhan Anda */
-    margin: 0 auto;
+    color: var(--dark-bg); 
+    border-radius: 9px;
+    font-size: 1.2em;
 }
 
 .contact-form-design textarea {
@@ -354,8 +366,8 @@ a:hover {
 
 .send-button-figma {
     position: absolute;
-    bottom: 5px; 
-    right: 7px;  
+    bottom: 10px; 
+    right: 10px;  
     background-color: #171747; 
     color: var(--text-light);
     border: none;
@@ -438,6 +450,8 @@ a:hover {
     }
 }
 
+
+
 /*--ubah ke hp--*/
 @media (max-width: 767px) {
     
@@ -517,4 +531,51 @@ a:hover {
     align-items: center; 
     padding: 15px 5%;
     flex-direction: row; 
+}
+    .navbar {
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 15px 5%;
+    flex-direction: row; 
+}
+
+    .hamburger-icon {
+    display: block; 
+}
+
+    .menu-container {
+    display: none; 
+    position: absolute;
+    top: 60px; 
+    left: 0;
+    width: 100%;
+    background-color: #0a0a51; 
+    flex-direction: column; 
+    align-items: center;
+    padding: 20px 0;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+    #menu-toggle:checked ~ .menu-container {
+    display: flex;
+}
+
+    .main-nav {
+    flex-direction: column; 
+    text-align: center;
+    width: 100%;
+    margin: 10px 0;
+}
+
+    .main-nav a {
+    padding: 10px 0;
+    margin: 5px 0;
+    border-bottom: 1px solid rgba(13, 6, 139, 0.537);
+}
+
+    .social-nav {
+    margin-top: 15px;
+    margin-bottom: 5px;
 }}
